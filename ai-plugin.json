@@ -10,10 +10,8 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-domain.com/openapi.json",
+    "url": "https://github.com/WHoechsmann/jira-mcp-plugin/blob/main/openapi.json",
     "is_user_authenticated": true
   },
-  "logo_url": "https://your-domain.com/logo.png",
   "contact_email": "dein.email@example.com",
-  "legal_info_url": "https://your-domain.com/impressum"
 }
