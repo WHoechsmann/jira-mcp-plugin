@@ -5,13 +5,16 @@
   "description_for_human": "Per JQL offene Issues aus deiner MCP-Jira-Instanz abfragen",
   "description_for_model": "Plugin zum Ausführen von GET /rest/api/3/search auf deiner Jira-Instanz",
   "auth": {
-    "type": "basic",
-    "instructions": "Nutze deine Jira-E-Mail als Benutzer und dein persönliches API-Token als Passwort"
+    "type": "api_key",
+    "in": "header",
+    "name": "Authorization",
+    "instructions": "Füge deinen Jira-API-Token im Header als 'Authorization: Bearer <token>' hinzu."
   },
   "api": {
     "type": "openapi",
-    "url": "https://github.com/WHoechsmann/jira-mcp-plugin/blob/main/openapi.json",
+    "url": "https://raw.githubusercontent.com/WHoechsmann/jira-mcp-plugin/main/openapi.json",
     "is_user_authenticated": true
   },
-  "contact_email": "dein.email@example.com",
+
+  "contact_email": "dein.email@example.com"
 }
