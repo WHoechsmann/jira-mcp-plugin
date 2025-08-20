@@ -1,0 +1,7 @@
+{
+  "model": "gpt-4o-mini",
+  "messages": [
+    {"role":"system","content":"Nutze den Connector unter /search"},
+    {"role":"user","content":"/search?jql=project=PROJANDER"}
+  ]
+}
