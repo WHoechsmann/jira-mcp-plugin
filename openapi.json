@@ -1,0 +1,52 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Atlassian MCP Connector",
+    "version": "1.0.0",
+    "description": "Abfrage offener Jira-Issues per JQL"
+  },
+  "servers": [
+    {
+      "url": "https://deine-mcp-hostname"
+    }
+  ],
+  "paths": {
+    "/rest/api/3/search": {
+      "get": {
+        "summary": "Suche Issues nach JQL",
+        "parameters": [
+          {
+            "name": "jql",
+            "in": "query",
+            "schema": { "type": "string" },
+            "required": true,
+            "description": "Jira Query Language"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Liste der Issues",
+            "content": {
+              "application/json": {
+                "schema": { "type": "object" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    }
+  },
+  "security": [
+    {
+      "basicAuth": []
+    }
+  ]
+}

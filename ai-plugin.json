@@ -1,0 +1,19 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Jira MCP Connector",
+  "name_for_model": "jira_mcp",
+  "description_for_human": "Per JQL offene Issues aus deiner MCP-Jira-Instanz abfragen",
+  "description_for_model": "Plugin zum Ausführen von GET /rest/api/3/search auf deiner Jira-Instanz",
+  "auth": {
+    "type": "basic",
+    "instructions": "Nutze deine Jira-E-Mail als Benutzer und dein persönliches API-Token als Passwort"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-domain.com/openapi.json",
+    "is_user_authenticated": true
+  },
+  "logo_url": "https://your-domain.com/logo.png",
+  "contact_email": "dein.email@example.com",
+  "legal_info_url": "https://your-domain.com/impressum"
+}
