@@ -7,9 +7,9 @@
   },
   "servers": [
     {
-      "url": "https://deine-mcp-hostname"
+        "url": "https://whoechsmann.github.io/jira-mcp-plugin"
     }
-  ],
+    ],
   "paths": {
     "/rest/api/3/search": {
       "get": {
